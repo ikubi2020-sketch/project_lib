@@ -26,6 +26,7 @@ def create_table_books():
                 create table if not exists books(
                 id int primary key auto_increment,
                 title varchar(50) not null,
+                author varchar(50) not null,
                 genre varchar(20) not null,
                 is_available boolean not null default True,
                 borrowed_by_member_id int default null);

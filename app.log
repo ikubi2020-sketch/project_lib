@@ -1,2 +1,10 @@
 2026-06-14 10:56:39,213 | INFO | active func | create_table_members |
 2026-06-14 10:56:39,289 | ERROR | reach error argument 3 must be str or None, not int
+2026-06-14 12:24:31,584 | INFO | active func | create_book |
+2026-06-14 12:25:20,351 | INFO | active func | create_book |
+2026-06-14 12:26:48,599 | INFO | active func | create_book |
+2026-06-14 12:27:59,099 | INFO | active func | create_book |
+2026-06-14 12:32:23,280 | INFO | active func | create_book |
+2026-06-14 12:32:23,489 | ERROR | reach error 1136 (21S01): Column count doesn't match value count at row 1
+2026-06-14 12:38:02,906 | ERROR | active func | create_table |
+2026-06-14 12:38:03,165 | INFO | table books created

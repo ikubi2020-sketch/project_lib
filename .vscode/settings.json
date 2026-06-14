@@ -6,6 +6,8 @@
         "idna",
         "pydantic",
         "starlette",
+        "summaryavailable",
+        "unaveil",
         "uvicorn",
         "varchar",
         "venv"
