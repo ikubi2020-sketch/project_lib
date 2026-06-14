@@ -7,7 +7,7 @@ def get_connection():
     connection =mysql.connector.connect(
     host="localhost",
     port=3306,
-    password=1313,
+    password="1313",
     user="root",
     database="library_db")
     return connection 
@@ -74,20 +74,6 @@ def create_table_members():
 
 
 
-
-def ______():
-    logger.info("active func |  |")
-    cursor = None
-    try:
-        connection = get_connection()
-        cursor = connection.cursor()
-        cursor.execute(";")
-    except Exception as e:
-        logger.error(f"reach error {e}")
-        return {"message" : f"reach error {e}"}
-    finally:
-        if cursor is not None:
-            cursor.close()
 
         
 
