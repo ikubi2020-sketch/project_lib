@@ -51,6 +51,8 @@ directory logs hold the logging setting file and the logger itself
 directory routers hold different files holding deferent routers
 one for all books one for all members and one to get reports 
 
+file .vscode is an extension that contain miss spelled words (a.k.a. not relevant) 
+
 library-api/ 
 │ 
 │ 
@@ -104,3 +106,5 @@ as soon as a request comes throw the right  place  the request will
 be sent to the right class/function that will go to the database to get 
 the required information or or update to right field doing  this process every action will by written in the logs file 
 when the request will be done with success or failure  the user and the logs will get respond of result
+
+

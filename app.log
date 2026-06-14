@@ -1,0 +1,2 @@
+2026-06-14 10:56:39,213 | INFO | active func | create_table_members |
+2026-06-14 10:56:39,289 | ERROR | reach error argument 3 must be str or None, not int

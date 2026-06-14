@@ -1,5 +1,12 @@
 {
     "cSpell.words": [
+        "anyio",
+        "colorama",
+        "fastapi",
+        "idna",
+        "pydantic",
+        "starlette",
+        "uvicorn",
         "varchar",
         "venv"
     ]
