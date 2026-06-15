@@ -1,46 +1,54 @@
 from logs.logger_create import logger 
-from db_connection import get_connection
-
-
+from database.db_connection import get_connection
+from utils.utils_files import *
+from fastapi import HTTPException
 
 class membersDB:
-    def create_member(data):
+    def create_member(self, data):
+        logger.info("active func | create_member |")
+        cursor = None
+        params =  (data["name"], data["email"], data["is_active"], data["total_borrows"])
+        query = "insert into members (name,email, is_active, total_borrows) values   (%s, %s,  %s, %s);" 
+        try:
+            run_query_dml(query, params)
+            logger.info("crete member")
+        except Exception as e:
+            logger.error(f"reach error {e}")
+            raise HTTPException (status_code=400, detail={"message" : f"reach error {e}"})
+       
+
+    def get_all_members(self): 
         pass
 
-    def get_all_members(): 
-        pass
-
-    def get_member_by_id(id):
+    def get_member_by_id(self, id):
         pass 
 
-    def update_member(id, data):
+    def update_member(self, id, data):
         pass
         
-    def deactivate_member(id):
+    def deactivate_member(self, id):
         pass
 
-    def activate_member(id):
+    def activate_member(self, id):
         pass
 
-    def increment_borrows(id):
+    def increment_borrows(self, id):
         pass
 
-    def count_active_members():
+    def count_active_members(self):
         pass
 
-    def get_top_member():
+    def get_top_member(self):
         pass
+
 
 def ______():
     logger.info("active func |  |")
     cursor = None
     try:
-        connection = get_connection()
-        cursor = connection.cursor()
-        cursor.execute(";")
+        logger.info("")
     except Exception as e:
         logger.error(f"reach error {e}")
-        return {"message" : f"reach error {e}"}
-    finally:
-        if cursor is not None:
-            cursor.close()
+        # raise HTTPException (status_code=400, detail={"message" : f"reach error {e}"})
+    
+

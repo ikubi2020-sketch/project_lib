@@ -8,3 +8,35 @@
 2026-06-14 12:32:23,489 | ERROR | reach error 1136 (21S01): Column count doesn't match value count at row 1
 2026-06-14 12:38:02,906 | ERROR | active func | create_table |
 2026-06-14 12:38:03,165 | INFO | table books created
+2026-06-15 09:03:08,761 | INFO | active func | create_member |
+2026-06-15 09:03:08,762 | ERROR | reach error run_query_dml() missing 1 required positional argument: 'query'
+2026-06-15 09:12:43,879 | INFO | active func | create_member |
+2026-06-15 09:12:44,056 | ERROR | reach error Not enough parameters for the SQL statement
+2026-06-15 09:14:31,363 | INFO | active func | create_member |
+2026-06-15 09:14:31,439 | ERROR | reach error 1136 (21S01): Column count doesn't match value count at row 1
+2026-06-15 09:15:23,726 | INFO | active func | create_member |
+2026-06-15 09:15:23,820 | INFO | crete member
+2026-06-15 09:15:41,310 | INFO | active func | create_member |
+2026-06-15 09:15:41,352 | INFO | crete member
+2026-06-15 09:56:12,428 | INFO | active func  | create_book_r |
+2026-06-15 09:56:12,429 | INFO | active func | create_book |
+2026-06-15 09:58:13,556 | INFO | active func  | create_book_r |
+2026-06-15 09:58:13,557 | INFO | active func | create_book |
+2026-06-15 09:58:13,643 | INFO | book created
+2026-06-15 10:10:12,136 | INFO | active func  | get_all_books_r |
+2026-06-15 10:14:03,967 | INFO | active func  | get_all_books_r |
+2026-06-15 10:19:09,285 | INFO | active func  | get_all_books_r |
+2026-06-15 10:19:09,286 | INFO | active func | get_all_books |
+2026-06-15 10:19:09,326 | INFO | all books list
+2026-06-15 10:19:35,155 | INFO | active func  | get_all_books_r |
+2026-06-15 10:19:35,155 | INFO | active func | get_all_books |
+2026-06-15 10:19:35,171 | INFO | all books list
+2026-06-15 10:20:09,951 | INFO | active func  | get_all_books_r |
+2026-06-15 10:20:09,951 | INFO | active func | get_all_books |
+2026-06-15 10:20:09,973 | INFO | all books list
+2026-06-15 10:21:03,424 | INFO | active func  | get_all_books_r |
+2026-06-15 10:21:03,426 | INFO | active func | get_all_books |
+2026-06-15 10:21:03,483 | INFO | all books list
+2026-06-15 10:27:06,733 | INFO | active func  | get_book_by_id_r |
+2026-06-15 10:27:06,734 | INFO | active func | get_book_by_id |
+2026-06-15 10:27:06,812 | INFO | send book outside
