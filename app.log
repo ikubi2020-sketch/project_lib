@@ -40,3 +40,89 @@
 2026-06-15 10:27:06,733 | INFO | active func  | get_book_by_id_r |
 2026-06-15 10:27:06,734 | INFO | active func | get_book_by_id |
 2026-06-15 10:27:06,812 | INFO | send book outside
+2026-06-15 11:31:08,207 | INFO | active func | update_book_r |
+2026-06-15 11:31:08,207 | INFO | active func | update_book |
+2026-06-15 11:31:08,311 | ERROR | reach error expected string or bytes-like object, got 'tuple'
+2026-06-15 11:41:28,010 | INFO | active func | update_book_r |
+2026-06-15 11:42:37,548 | INFO | active func | update_book |
+2026-06-15 11:43:16,210 | ERROR | reach error expected string or bytes-like object, got 'tuple'
+2026-06-15 11:45:52,046 | INFO | active func | update_book_r |
+2026-06-15 11:45:52,047 | INFO | active func | update_book |
+2026-06-15 11:45:52,122 | ERROR | reach error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'set title = 'sdfgh', author = 'sdfg', genre = 'asdf', where id = '2'' at line 1
+2026-06-15 11:47:51,658 | INFO | active func | update_book_r |
+2026-06-15 11:47:51,659 | INFO | active func | update_book |
+2026-06-15 11:47:51,728 | ERROR | reach error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where id = 2' at line 1
+2026-06-15 11:49:09,422 | INFO | active func | update_book_r |
+2026-06-15 11:49:09,423 | INFO | active func | update_book |
+2026-06-15 11:49:09,503 | INFO | update book
+2026-06-15 12:34:36,599 | INFO | active func  | create_book_r |
+2026-06-15 12:34:36,599 | INFO | active func | create_book |
+2026-06-15 12:40:30,392 | INFO | active func  | create_book_r |
+2026-06-15 12:40:30,393 | INFO | active func | create_book |
+2026-06-15 12:43:59,449 | INFO | active func  | create_book_r |
+2026-06-15 12:43:59,449 | INFO | active func | create_book |
+2026-06-15 15:01:33,903 | INFO | 
+2026-06-15 15:11:17,881 | INFO | active func |  |
+2026-06-15 15:11:18,012 | ERROR | reach error 1054 (42S22): Unknown column 'count' in 'field list'
+2026-06-15 15:12:53,056 | INFO | active func | count_total_books |
+2026-06-15 15:12:53,142 | ERROR | reach error 1630 (42000): FUNCTION library_db.count does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+2026-06-15 15:15:20,885 | INFO | active func | count_total_books |
+2026-06-15 15:15:20,908 | ERROR | reach error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'all from books' at line 1
+2026-06-15 15:20:06,292 | INFO | active func | count_total_books |
+2026-06-15 15:20:06,315 | ERROR | reach error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'all from books' at line 1
+2026-06-15 15:24:55,746 | INFO | active func | count_total_books |
+2026-06-15 15:24:55,789 | INFO | count of books sent out
+2026-06-15 15:36:54,858 | INFO | 
+2026-06-15 15:41:59,341 | INFO | active func | count_available_books |
+2026-06-15 15:41:59,341 | INFO | active func | count_available_books |
+2026-06-15 15:41:59,368 | INFO | count of available books sent out
+2026-06-15 15:44:25,842 | INFO | active func | count_available_books |
+2026-06-15 15:44:25,843 | INFO | active func | count_available_books |
+2026-06-15 15:44:25,862 | INFO | count of available books sent out
+2026-06-15 15:44:44,059 | INFO | active func | count_available_books |
+2026-06-15 15:44:44,060 | INFO | active func | count_available_books |
+2026-06-15 15:44:44,080 | INFO | count of available books sent out
+2026-06-15 15:45:55,945 | INFO | 
+2026-06-15 15:49:50,239 | INFO | active func | count_available_books |
+2026-06-15 15:49:50,240 | INFO | active func | count_borrowed_books |
+2026-06-15 15:49:50,263 | INFO | sent borrowed books
+2026-06-15 15:53:32,538 | INFO | 
+2026-06-15 16:01:12,798 | INFO | active func | count_by_genre_r |
+2026-06-15 16:04:00,940 | INFO | active func | count_by_genre_r |
+2026-06-15 16:04:00,940 | INFO | active func | count_by_genre |
+2026-06-15 16:04:00,962 | ERROR | reach error Could not process parameters: str(fiction), it must be of type list, tuple or dict
+2026-06-15 16:04:58,404 | INFO | active func | count_by_genre_r |
+2026-06-15 16:04:58,405 | INFO | active func | count_by_genre |
+2026-06-15 16:04:58,426 | ERROR | reach error Could not process parameters: str(fiction), it must be of type list, tuple or dict
+2026-06-15 16:09:36,884 | INFO | active func | count_by_genre_r |
+2026-06-15 16:09:36,884 | INFO | active func | count_by_genre |
+2026-06-15 16:09:36,907 | ERROR | reach error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''fiction'' at line 1
+2026-06-15 16:11:24,648 | INFO | active func | count_by_genre_r |
+2026-06-15 16:11:24,648 | INFO | active func | count_by_genre |
+2026-06-15 16:11:24,672 | ERROR | reach error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''fiction'' at line 1
+2026-06-15 16:13:50,715 | INFO | active func | count_by_genre_r |
+2026-06-15 16:13:50,715 | INFO | active func | count_by_genre |
+2026-06-15 16:13:50,732 | ERROR | reach error Not all parameters were used in the SQL statement
+2026-06-15 16:18:23,768 | INFO | active func | count_by_genre_r |
+2026-06-15 16:18:23,768 | INFO | active func | count_by_genre |
+2026-06-15 16:18:23,789 | ERROR | reach error Not all parameters were used in the SQL statement
+2026-06-15 16:18:53,945 | INFO | active func | count_by_genre_r |
+2026-06-15 16:18:53,945 | INFO | active func | count_by_genre |
+2026-06-15 16:18:53,968 | ERROR | reach error Not all parameters were used in the SQL statement
+2026-06-15 16:19:34,207 | INFO | active func | count_by_genre_r |
+2026-06-15 16:19:34,207 | INFO | active func | count_by_genre |
+2026-06-15 16:19:34,228 | ERROR | reach error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''fiction'' at line 1
+2026-06-15 16:23:04,224 | INFO | active func | count_by_genre_r |
+2026-06-15 16:23:04,224 | INFO | active func | count_by_genre |
+2026-06-15 16:23:04,244 | INFO | return count by genre
+2026-06-15 16:34:16,999 | INFO | 
+2026-06-15 16:34:20,474 | INFO | 
+2026-06-15 16:42:01,026 | INFO | active func | count_active_borrows_by_member |
+2026-06-15 16:42:01,028 | INFO | active func | count_active_borrows_by_member |
+2026-06-15 16:42:01,076 | ERROR | reach error 1054 (42S22): Unknown column 'is_available' in 'field list'
+2026-06-15 16:42:50,150 | INFO | active func | count_active_borrows_by_member |
+2026-06-15 16:42:50,150 | INFO | active func | count_active_borrows_by_member |
+2026-06-15 16:42:50,197 | ERROR | reach error 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) from members where id = 1' at line 1
+2026-06-15 16:49:28,692 | INFO | active func | count_active_borrows_by_member |
+2026-06-15 16:49:28,693 | INFO | active func | count_active_borrows_by_member |
+2026-06-15 16:49:28,740 | INFO | borrow number sent out
