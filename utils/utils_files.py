@@ -50,7 +50,6 @@ def run_query_fetchone(query, params = None):
 
 def ______():
     logger.info("active func |  |")
-    cursor = None
     query = ""
     try:
 

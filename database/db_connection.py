@@ -3,7 +3,6 @@ from logs.logger_create import logger
 
 
 def get_connection():
-    connection = None
     connection =mysql.connector.connect(
     host="localhost",
     port=3306,
@@ -17,7 +16,6 @@ def get_connection():
 
 def create_table_books():
     logger.error("active func | create_table |")
-    cursor = None
     try:
         connection = get_connection()
         cursor = connection.cursor()
@@ -35,17 +33,12 @@ def create_table_books():
     except Exception as e:
         logger.error(f"reach error {e}")
         return {"message" : f"reach error {e}"}
-    finally:
-        if cursor is not None:
-            cursor.close()
-
-
+    
 
 
 
 def create_table_members():
     logger.info("active func | create_table_members |")
-    cursor = None
     try:
         connection = get_connection()
         cursor = connection.cursor()
@@ -61,10 +54,7 @@ def create_table_members():
     except Exception as e:
         logger.error(f"reach error {e}")
         return {"message" : f"reach error {e}"}
-    finally:
-        if cursor is not None:
-            cursor.close()
-
+    
         
 
 

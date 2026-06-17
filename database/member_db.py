@@ -17,8 +17,18 @@ class membersDB:
             raise HTTPException (status_code=400, detail={"message" : f"reach error {e}"})
        
 
-    def get_all_members(self): 
-        pass
+    def get_all_members(self):
+        logger.info("active func | get_all_members |")
+        query = "select name as all_members from members;"
+        try:
+            all_members = run_query_fetchall(query)
+            logger.info("sent out all_members")
+            return all_members
+        except Exception as e:
+            logger.error(f"reach error {e}")
+            raise HTTPException (status_code=400, detail={"message" : f"reach error {e}"})
+    
+
 
     def get_member_by_id(self, id):
         pass 
@@ -44,9 +54,10 @@ class membersDB:
 
 def ______():
     logger.info("active func |  |")
-    cursor = None
     try:
+        query = ""
         logger.info("")
+        return 
     except Exception as e:
         logger.error(f"reach error {e}")
         # raise HTTPException (status_code=400, detail={"message" : f"reach error {e}"})

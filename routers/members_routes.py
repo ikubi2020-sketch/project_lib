@@ -17,8 +17,8 @@ def create_member_r(data : Members):
 
 @router.get("")
 def get_all_members_r():
-    
-    pass
+    all_members = db_class.get_all_members()
+    return {"status code": 200, "result" : all_members}
 
 @router.get("/{id}")
 def get_member_by_id(id):
